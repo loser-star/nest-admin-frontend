@@ -4,7 +4,10 @@
     <router-link to="/about">About</router-link>
   </nav>
   <router-view /> -->
-  <div>loser555555</div>
+  <div>
+    loser555555
+    <el-button type="primary">Primary</el-button>
+  </div>
 </template>
 
 <style lang="scss">

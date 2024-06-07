@@ -1,0 +1,13 @@
+diff --git a/node_modules/element-plus/lib/components/button/src/button.js b/node_modules/element-plus/lib/components/button/src/button.js
+index 2a6fd06..57b828a 100644
+--- a/node_modules/element-plus/lib/components/button/src/button.js
++++ b/node_modules/element-plus/lib/components/button/src/button.js
+@@ -62,7 +62,7 @@ const buttonProps = runtime.buildProps({
+ const buttonEmits = {
+   click: (evt) => evt instanceof MouseEvent
+ };
+-
++console.log(1111)
+ exports.buttonEmits = buttonEmits;
+ exports.buttonNativeTypes = buttonNativeTypes;
+ exports.buttonProps = buttonProps;
