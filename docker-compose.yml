@@ -1,0 +1,14 @@
+version: '3'
+services:
+  # Vue应用容器
+  vue-app:
+    build:
+      context: .
+      dockerfile: Dockerfile  # 如果你的Vue项目有自定义的Dockerfile，替换为正确的文件名
+    container_name: vue-app
+    ports:
+      - "3000:3000"  # 映射容器的8080端口到本地的8080端口
+    volumes:
+      - .:/app  # 将本地项目目录映射到容器的/app目录
+    command: npm run serve  # 启动Vue项目的开发服务器
+
